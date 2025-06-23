@@ -1,0 +1,6 @@
+.flex-grow{
+    display: block;
+    width: 80%;
+    height: auto;
+    background-color: lightblue;
+}

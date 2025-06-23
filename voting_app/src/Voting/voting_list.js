@@ -9,8 +9,10 @@ class Voting extends React.Component{
             sex:"M",
             description:" i am teacher computer at Idea Source School" ,            
         }
+        
         return(
-            <div>                
+            <div>    
+            {/* pass data to child component by props*/}            
                 <Product item ={data}  />
             </div>
         )

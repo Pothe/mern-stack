@@ -9,8 +9,10 @@ class Product extends React.Component{
           <>
       <div className="container-fluid">        
          <div className="row">
-            <div className="col-md-3">sadfsdaf</div>
-             <div className="col-md-9">sadfsdaf</div>
+            <div className="col-md-3">
+            {item.name}
+            </div>
+             <div className="col-md-9">{item.name}</div>
          </div>
        
       </div>

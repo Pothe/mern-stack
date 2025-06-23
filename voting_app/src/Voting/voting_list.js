@@ -4,16 +4,16 @@ import Product from "./ProductLIst/Products";
 class Voting extends React.Component{
     render(){
 
-        const data ={
+        const data =[{
             name:"pothe",
             sex:"M",
             description:" i am teacher computer at Idea Source School" ,            
-        }
-        
+        }]
+
         return(
             <div>    
             {/* pass data to child component by props*/}            
-                <Product item ={data}  />
+                <Product item ={data[0]}  />
             </div>
         )
     }

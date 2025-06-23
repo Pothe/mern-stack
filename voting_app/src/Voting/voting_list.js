@@ -6,9 +6,8 @@ class Voting extends React.Component{
 
         const data ={
             name:"pothe",
-            sex:"M"
-        
-            
+            sex:"M",
+            description:" i am teacher computer at Idea Source School" ,            
         }
         return(
             <div>                

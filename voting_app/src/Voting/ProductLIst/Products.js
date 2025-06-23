@@ -17,6 +17,8 @@ class Product extends React.Component{
                 <span>{this.props.id}</span>
                <h1>{this.props.title}</h1>
                <p> {this.props.des}</p>
+                <p> {this.props.price}</p>
+              
                 </div>
 
           

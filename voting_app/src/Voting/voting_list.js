@@ -7,12 +7,14 @@ class Voting extends React.Component{
 
 
     render(){
-        // const productDataList = productsData;
+    
         const ProductListIterm = productsData.map((product)=>{
             return(
             <Product key={product.id}
             title ={product.title}
             des = {product.description}
+            price ={product.price}
+            // id={product.id}
             />
             )
         })

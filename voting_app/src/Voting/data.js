@@ -22,6 +22,13 @@ const productsData = [
     // imageUrl: productCImage,
     price: '89.00',
   },
+  {
+    id: 4,
+    title: 'smart security',
+    description: 'Control all your smart devices from one central place.',
+    // imageUrl: productCImage,
+    price: '100.00',
+  },
 ];
 
 export default productsData;

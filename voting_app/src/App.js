@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Voting from './Voting/voting_list';
 import 'bootstrap/dist/css/bootstrap.css';
 

@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Home from './components/voting_list';
+import Voting from './Voting/voting_list';
 
 import './App.css';
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />       
-        <Home/>
+        <Voting/>
       </header>
     </div>
   );

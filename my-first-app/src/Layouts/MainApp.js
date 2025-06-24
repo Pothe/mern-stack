@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import NavbarMenu from "../components/navbar";
 class MainApp extends React.Component {
     state = {  } 
     render() { 
         return (
-            <Router>    
+            <BrowserRouter>    
              <NavbarMenu/>
-            <Routes>
-            <Route />
+                <Routes>
+                <Route  path="/" element ={<HomeScreen/>}/>
             </Routes>
-             </Router>
+             </BrowserRouter>
         );
     }
 }

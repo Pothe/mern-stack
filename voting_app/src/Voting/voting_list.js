@@ -11,9 +11,12 @@ class Voting extends React.Component{
         const ProductListIterm = productsData.products.map((product)=>{
             return(
             <Product key={product.id}
+            id ={product.id}
             title ={product.title}
             des = {product.description}
-            price ={product.price}          
+            price ={product.price}     
+            vote={product.votes}  
+            img ={product.url}   
             />
             )
         })

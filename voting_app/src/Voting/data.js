@@ -1,4 +1,5 @@
 import React from "react";
+import Img1 from '../assets/images/productlist (1).jpg';
 
 const productsData ={
   products: [
@@ -6,7 +7,7 @@ const productsData ={
     id: 1,
     title: 'Yellow Pail',
     description: 'On-demand sand castle construction expertise.',
-    url: '#',
+    url: Img1,
     votes: 41
   },
   {

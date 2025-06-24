@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 function Navbarmenu(){
     return(
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+        <div className="container-fluid bg-primary ">
+        <div className="container">
+<nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
   <Link to={'/'} className="navbar-brand">MySite</Link>  
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -12,10 +16,10 @@ function Navbarmenu(){
     </button>
     
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto text-white">
         <li class="nav-item">
           
-           <Link to={'/'} className="nav-link active">Home</Link>  
+           <Link to={'/'} className="nav-link active text-white">Home</Link>  
           
         </li>
         <li class="nav-item">
@@ -30,6 +34,8 @@ function Navbarmenu(){
     </div>
   </div>
 </nav>
+</div>
+</div>
     )
 }
 

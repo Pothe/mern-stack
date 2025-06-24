@@ -1,5 +1,5 @@
 import React from "react";
-// import productsData from "./data";
+import productsData from "./data";
 import Product from "./ProductLIst/Products";
 
 
@@ -8,15 +8,15 @@ class Voting extends React.Component{
 
     render(){
     
-        // const ProductListIterm = productsData.map((product)=>{
-        //     return(
-        //     <Product key={product.id}
-        //     title ={product.title}
-        //     des = {product.description}
-        //     price ={product.price}          
-        //     />
-        //     )
-        // })
+        const ProductListIterm = productsData.products.map((product)=>{
+            return(
+            <Product key={product.id}
+            title ={product.title}
+            des = {product.description}
+            price ={product.price}          
+            />
+            )
+        })
     //    const products = [
     //     {
     //     id: 1,
@@ -35,15 +35,15 @@ class Voting extends React.Component{
     //     }
     // ];
 // const item = products[0];
-const ProductListIterm = products.map((product)=>{
-    return (
-        <Product
-         key={product.id}
-         title ={product.title}
-         des = {product.description}
-         />
-    )
-})
+// const ProductListIterm = products.map((product)=>{
+//     return (
+//         <Product
+//          key={product.id}
+//          title ={product.title}
+//          des = {product.description}
+//          />
+//     )
+// })
         return(
             <div>    
             {/* pass data to child component by props*/}            

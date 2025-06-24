@@ -5,21 +5,43 @@ import Product from "./ProductLIst/Products";
 
 class Voting extends React.Component{
 
+constructor(props) {
+super(props);
+this.handleUpVote = this.handleUpVote.bind(this);
+}
+// handleProductUpVote(productId) {
+// console.log(productId + ' was upvoted.');
+// }
 
+// voting function 
+handleUpVote(id) {
+console.log(id +"was voted")
+}
+      
+   
     render(){
     
-        const ProductListIterm = productsData.products.map((product)=>{
+
+        // const ProductList = productsData.products.sort((a,b)=>(
+        //     a.votes- b.votes
+        // ))
+    const ProductList =[...productsData.products].sort((a,b)=> a.votes -b.votes);
+
+        const ProductListIterm = ProductList.map((product)=>{
             return(
-            <Product key={product.id}
+            <Product key={'product-'+product.id}
             id ={product.id}
             title ={product.title}
             des = {product.description}
             price ={product.price}     
             vote={product.votes}  
-            img ={product.url}   
+            img ={product.url} 
+            onVote ={this.handleUpVote}  
             />
             )
+            
         })
+       
     //    const products = [
     //     {
     //     id: 1,
@@ -61,5 +83,6 @@ class Voting extends React.Component{
                </div>
         )
     }
+  
 }
 export default Voting;

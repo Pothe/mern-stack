@@ -17,23 +17,23 @@ class Voting extends React.Component{
         //     />
         //     )
         // })
-       const products = [
-        {
-        id: 1,
-        title: 'Yellow Pail',
-        description: 'On-demand sand castle construction expertise.',        
-        },
-         {
-        id: 2,
-        title: 'Red Pail',
-        description: 'On-demand sand castle construction expertise.',        
-        },
-         {
-        id: 3,
-        title: 'Black Pail',
-        description: 'On-demand sand castle construction expertise.',        
-        }
-    ];
+    //    const products = [
+    //     {
+    //     id: 1,
+    //     title: 'Yellow Pail',
+    //     description: 'On-demand sand castle construction expertise.',        
+    //     },
+    //      {
+    //     id: 2,
+    //     title: 'Red Pail',
+    //     description: 'On-demand sand castle construction expertise.',        
+    //     },
+    //      {
+    //     id: 3,
+    //     title: 'Black Pail',
+    //     description: 'On-demand sand castle construction expertise.',        
+    //     }
+    // ];
 // const item = products[0];
 const ProductListIterm = products.map((product)=>{
     return (

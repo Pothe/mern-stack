@@ -5,11 +5,21 @@ import ProductList from "./ProductIterm";
 
 // import ProductList from "./ProductIterm";
 class ProductScreen extends React.Component {
+    constructor(props){
+        super(props);
+        this.HandleProductVote = this.HandleProductVote.bind(this)
+    }
+    
         HandleProductVote(productid){
             console.log(productid + " was voted")
         }
 
-        
+        HandleClickVoteup=(value)=>{
+            this.props.onVote(value)
+        }
+
+      
+
     render() { 
        const  ProductListing = 
                Database.Products.map((product)=>(
@@ -20,6 +30,7 @@ class ProductScreen extends React.Component {
                    description={product.description}
                    votes={product.votes}
                     onVote={this.HandleProductVote}
+                  
                    />
                </div>
                 

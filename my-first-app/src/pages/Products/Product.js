@@ -6,52 +6,51 @@ import ProductList from "./ProductIterm";
 // import ProductList from "./ProductIterm";
 class ProductScreen extends React.Component {
    
-    constructor(props){
-        super(props);
-        this.HandleClickVoteup =this.HandleClickVoteup.bind(this);
-    }
+   constructor(props) {
+  super(props);
+  this.state = {
+    ProductItemList: [],
+  };
+}
+
+componentDidMount() {
+  this.setState({ ProductItemList: [...Database.Products] });
+}
+
         HandleProductVote(productid){
             console.log(productid + " was voted")
         }
 
         HandleClickVoteup=(id)=>{
-            this.HandleProductVote(id);
+            this.HandleProductVote(id)
         }
 
       
 
-    render() { 
-       const  ProductListing = 
-               Database.Products.map((product)=>(
-               <div className="col-sm-12 col-md-6 col-lg-6" key={product.id} >
-                   <ProductList 
-                   id={product.id}
-                   title={product.title}
-                   description={product.description}
-                   votes={product.votes}
-                    onVote={this.HandleProductVote}
+   render() { 
+  const products = this.state.ProductItemList || [];
 
-                  
-                   />
-               </div>
-                
-                
-                    
-               ))
-   
+  const ProductListSort = [...products].sort((a, b) => a.votes - b.votes);
 
-        return (
-             <div className="container">
-                <div className="row g-1">
-                    {ProductListing}
-                </div>
-               
-                    
-            
-             
-            </div>
-        );
-    }
+  const ProductListing = ProductListSort.map(product => (
+    <div className="col-sm-12 col-md-6 col-lg-6" key={product.id}>
+      <ProductList 
+        id={product.id}
+        title={product.title}
+        description={product.description}
+        votes={product.votes}                   
+        onVote={this.HandleProductVote}
+      />
+    </div>
+  ));
+
+  return (
+    <div className="container">
+      <div className="row g-1">{ProductListing}</div>   
+    </div>
+  );
+}
+
 }
  
 export default ProductScreen;

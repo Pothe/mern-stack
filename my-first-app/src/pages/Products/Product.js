@@ -9,13 +9,14 @@ class ProductScreen extends React.Component {
    constructor(props) {
   super(props);
   this.state = {
-    ProductItemList: [],
+    ProductItermList: [],
   };
 }
-
-componentDidMount() {
-  this.setState({ ProductItemList: [...Database.Products] });
+componentDidMount(){
+    this.setState({  ProductItermList: [...Database.Products] })
 }
+// componentDidMount() {
+//   this.setState({ ProductItermList: [...Database.Products] });}
 
         HandleProductVote(productid){
             console.log(productid + " was voted")
@@ -28,9 +29,9 @@ componentDidMount() {
       
 
    render() { 
-  const products = this.state.ProductItemList || [];
-
-  const ProductListSort = [...products].sort((a, b) => a.votes - b.votes);
+// //   const products = ;
+ const ProductListSort = [...this.state.ProductItermList || []].sort((a,b)=> a.votes - b.votes);
+//  const ProductListSort = [...this.state.ProductItermList || []].sort((a, b) => a.votes - b.votes);
 
   const ProductListing = ProductListSort.map(product => (
     <div className="col-sm-12 col-md-6 col-lg-6" key={product.id}>

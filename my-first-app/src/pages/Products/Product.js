@@ -9,7 +9,7 @@ class ProductScreen extends React.Component {
     render() { 
        const  ProductListing = 
                Database.Products.map((product)=>(
-               <div className="col-5  bg-light" >
+               <div className="col-5" >
                    <ProductList key={product.id} 
                    id={product.id}
                    title={product.title}

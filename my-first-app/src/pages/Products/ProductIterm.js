@@ -8,7 +8,7 @@ class ProductList extends React.Component {
             <>
              <div className="col-12 g-1">
              
-                <div className="row">
+                <div className="row bg-light m-lg-auto">
                 <div className="col-3">
                     image
 

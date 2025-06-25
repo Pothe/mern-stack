@@ -6,12 +6,15 @@ class MainApp extends React.Component {
     state = {  } 
     render() { 
         return (
+
+            <div className="container">
             <BrowserRouter>    
              <NavbarMenu/>
                 <Routes>
-                <Route  path="/product" element ={<ProductScreen/>}/>
+                <Route  path="/" element ={<ProductScreen/>}/>
             </Routes>
              </BrowserRouter>
+             </div>
         );
     }
 }

@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
 const Database={
-    Prducts:[
+    Products:[
   {
     "id": 1,
     "title": "Yellow Pail",
@@ -184,17 +184,4 @@ const Database={
   }
 ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default Database;

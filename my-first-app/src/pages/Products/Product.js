@@ -8,6 +8,7 @@ class ProductScreen extends React.Component {
    
    constructor(props) {
   super(props);
+  this.HandleClickVoteup = this.HandleClickVoteup.bind(this);
   this.state = {
     ProductItermList: [],
   };
@@ -19,11 +20,11 @@ componentDidMount(){
 //   this.setState({ ProductItermList: [...Database.Products] });}
 
         HandleProductVote(productid){
-            console.log(productid + " was voted")
+            console.log(productid +1 +" was voted")
         }
 
         HandleClickVoteup=(id)=>{
-            this.HandleProductVote(id)
+            this.HandleClickVoteup(id)
         }
 
       

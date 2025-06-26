@@ -23,7 +23,7 @@ componentDidMount(){
 //   this.setState({ ProductItermList: [...Database.Products] });}
 
        HandleProductVote(productid) {
-        console.log(productid +" was voted")  
+        console.log(productid +" was voted"); 
 }
 
 

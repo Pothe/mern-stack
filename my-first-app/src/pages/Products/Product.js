@@ -11,32 +11,36 @@ class ProductScreen extends React.Component {
   this.HandleClickVoteup = this.HandleClickVoteup.bind(this);
   this.state = {
     ProductItermList: [],
-    nums :[],
+    listiterm :[],
   };
 }
 componentDidMount(){
-    this.setState({  ProductItermList: [...Database.Products] })
+    this.setState({  ProductItermList: [...Database.Products] });
+   
+     
+   
      
 }
 // componentDidMount() {
 //   this.setState({ ProductItermList: [...Database.Products] });}
 
-        HandleProductVote(productid){
-         
-            console.log(productid +1 +" was voted")
-          
-        }
-       
+ HandleProductVote = (productid) => {
+  console.log(productid + 1 + " was voted");
+  // update array 
+  this.setState(prevState => ({
+    listiterm: [...prevState.listiterm, "pothe"]
+  }));
+}
 
         HandleClickVoteup=(id)=>{
-            this.HandleClickVoteup(id)
-           
-           
+            this.HandleClickVoteup(id) 
         }
 
       
 
    render() { 
+     
+     console.log(this.state.listiterm)    
 // //   const products = ;
  const ProductListSort = [...this.state.ProductItermList || []].sort((a,b)=> a.votes - b.votes);
 //  const ProductListSort = [...this.state.ProductItermList || []].sort((a, b) => a.votes - b.votes);

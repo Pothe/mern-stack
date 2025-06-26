@@ -15,22 +15,21 @@ class ProductScreen extends React.Component {
   };
 }
 componentDidMount(){
-    this.setState({  ProductItermList: [...Database.Products] });
-   
-     
-   
-     
+    this.setState({  ProductItermList: [...Database.Products] });  
 }
 // componentDidMount() {
 //   this.setState({ ProductItermList: [...Database.Products] });}
 
- HandleProductVote = (productid) => {
-  console.log(productid + 1 + " was voted");
-  // update array 
-  this.setState(prevState => ({
-    listiterm: [...prevState.listiterm, "pothe"]
-  }));
-}
+        HandleProductVote(productid){         
+            console.log(productid +" was voted");
+          //  this.setState(prevState=>({listiterm:[...prevState.listiterm,"Pothe"]}));
+//            this.setState(prevState => ({
+//     listiterm: [...prevState. listiterm, "pothe"]
+//   })
+// );
+          
+        }
+       
 
         HandleClickVoteup=(id)=>{
             this.HandleClickVoteup(id) 

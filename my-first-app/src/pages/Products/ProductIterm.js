@@ -17,7 +17,7 @@ class ProductList extends React.Component {
 
                 </div>
                 <div className="col-9 ">
-                    <i className="bi bi-caret-up-fill"onClick={()=>this.props.onVote(this.props.id)}></i>
+                    <i className="bi bi-caret-up-fill" onClick={this.props.onVote}></i>
                     <span>{this.props.votes}</span>
                     <h3>{this.props.title}</h3>
                     <p>{this.props.description}</p>

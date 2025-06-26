@@ -11,7 +11,7 @@ class MainApp extends React.Component {
             <BrowserRouter>    
              <NavbarMenu/>
                 <Routes>
-                <Route  path="/" element ={<ProductScreen/>}/>
+                <Route  path="/product" element ={<ProductScreen/>}/>
             </Routes>
              </BrowserRouter>
              </div>

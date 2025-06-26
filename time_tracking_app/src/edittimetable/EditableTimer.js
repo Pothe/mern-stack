@@ -1,9 +1,9 @@
 import React from "react";
-class EditableTimeList extends React.Component{
+class EditableTimer extends React.Component{
     render(){
         return(
-            <>
-            <div className="card text-center mx-auto" style={{ maxWidth: "300px" }}>
+            <>            
+         <div className="card text-center mx-auto" style={{ maxWidth: "300px" }}>
         <div className="card-body">
           <h5 className="card-title">Mow the lawn</h5>
           <p className="text-muted">House Chores</p>
@@ -18,10 +18,10 @@ class EditableTimeList extends React.Component{
           </div>
           <button className="btn btn-success w-100">Start</button>
         </div>
-      </div>
+          </div>
             </>
         )
     }
 }
 
-export default EditableTimeList;
+export default EditableTimer;

@@ -20,8 +20,10 @@ componentDidMount(){
 //   this.setState({ ProductItermList: [...Database.Products] });}
 
         HandleProductVote(productid){
+         
             console.log(productid +1 +" was voted")
         }
+       
 
         HandleClickVoteup=(id)=>{
             this.HandleClickVoteup(id)

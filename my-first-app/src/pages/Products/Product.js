@@ -11,10 +11,12 @@ class ProductScreen extends React.Component {
   this.HandleClickVoteup = this.HandleClickVoteup.bind(this);
   this.state = {
     ProductItermList: [],
+    nums :[],
   };
 }
 componentDidMount(){
     this.setState({  ProductItermList: [...Database.Products] })
+     
 }
 // componentDidMount() {
 //   this.setState({ ProductItermList: [...Database.Products] });}
@@ -22,11 +24,14 @@ componentDidMount(){
         HandleProductVote(productid){
          
             console.log(productid +1 +" was voted")
+          
         }
        
 
         HandleClickVoteup=(id)=>{
             this.HandleClickVoteup(id)
+           
+           
         }
 
       

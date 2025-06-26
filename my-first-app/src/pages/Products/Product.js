@@ -11,21 +11,16 @@ class ProductScreen extends React.Component {
   
   this.state = {
     ProductItermList:[],
-    ListItem:[],
  
   };
   this.HandleClickVoteup = this.HandleClickVoteup.bind(this);
 }
 componentDidMount(){
     this.setState({  ProductItermList: [...Database.Products] });   
-    this.setState({ListItem:[1,2,3,4]})
+    
 }
 
-addItemToList = () => {
-  this.setState(prevState => ({
-    ListItem: [...prevState.ListItem, 4]
-  }));
-};
+
 // componentDidMount() {
 //   this.setState({ ProductItermList: [...Database.Products] });}
 
@@ -57,7 +52,7 @@ addItemToList = () => {
   return (
     
     <div className="container">
-      <button onClick={this.addItemToList}>Add Item</button>
+      
       <div className="row g-1">{ProductListing}</div>   
     </div>
   );

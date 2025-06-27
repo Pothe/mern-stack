@@ -5,7 +5,10 @@ class EditableTimeList extends React.Component{
         return(
             <>
                   
-               <EditableTimer/>              
+               <EditableTimer 
+               title="Wasington DC"
+                Hours="12:00"
+               />              
              
             </>
         )

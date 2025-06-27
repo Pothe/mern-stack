@@ -3,7 +3,7 @@ class EditableTimer extends React.Component{
     render(){
         return(
             <>            
-         <div className="card text-center mx-auto" style={{ maxWidth: "300px" }}>
+         <div className="card text-center mx-auto gap-1 mt-2" style={{ maxWidth: "300px" }}>
         <div className="card-body">
           <h5 className="card-title">Mow the lawn</h5>
           <p className="text-muted">House Chores</p>

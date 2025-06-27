@@ -7,10 +7,17 @@ class App extends React.Component{
   render(){
     return(
       <>
-       <EditableTimeList/>
+        <div className="container mt-5">
+            <h2 className="text-center mb-4">Timers</h2>    
+             <EditableTimeList/>
+              <EditableTimeList/>
+              
 
-         <ToggleableTimerForm
-          isOpen={true}/>
+           <ToggleableTimerForm
+          isOpen={true}/>       
+                            
+              </div>
+      
       </>
         
     )

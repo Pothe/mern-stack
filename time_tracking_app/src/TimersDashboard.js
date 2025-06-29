@@ -7,6 +7,7 @@ class TimersDashboard extends React.Component {
         return (
         <>
     <EditableTimerList/>
+    
     <ToggleableTimerForm 
     isOpent={true}
     />

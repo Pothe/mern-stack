@@ -3,7 +3,7 @@ class Timer extends React.Component{
     render(){
         return(
             <>
-            Timer 2
+            {this.props.title}
             </>
         )
     }

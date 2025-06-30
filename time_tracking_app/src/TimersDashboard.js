@@ -6,8 +6,8 @@ class TimersDashboard extends React.Component {
     state = {  } 
     render() { 
         return (
-       <div className="container">
-        <div className="card">
+       <div className="containers">
+        <div className="cards">
     <EditableTimerList/>
     
     <ToggleableTimerForm 

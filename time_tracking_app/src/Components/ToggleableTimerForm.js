@@ -1,12 +1,17 @@
 import React from "react";
 import TimerForm from "./sub_component/TimerForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
 class ToggleableTimerForm extends React.Component {
-    state = {  } 
+    state = { isOpen:false } 
     render() { 
 
-        if(this.props.isOpent){
+        if(this.state.isOpen){
             return(
-                <TimerForm/>
+               <>
+                <TimerForm />
+               </>
             )
         }
         return (

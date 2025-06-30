@@ -6,22 +6,21 @@ class EditableTimerList extends React.Component {
         return (
 <div id="Timers">
 
-
         
   <EditableTimer
   title='Learn React'
   project='Web Domination'
   elapsed='8986300'
   runningSince={null}
-  editFormOpen={false}
+  editFormOpen={true}
   />
 
    <EditableTimer
    title='Learn React'
-  project='Web Domination'
-  elapsed='8986300'
-  runningSince={null}
-  editFormOpen={true}
+    project='Web Domination'
+    elapsed='8986300'
+    runningSince={null}
+    editFormOpen={true}
    
    />
    </div>

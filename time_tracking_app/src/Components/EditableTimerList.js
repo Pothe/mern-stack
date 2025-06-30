@@ -1,14 +1,31 @@
 import React from "react";
+import EditableTimer from "./sub_component/EditableTimer";
 class EditableTimerList extends React.Component {
 
     render() { 
         return (
-        <>
-          <h1>EditableTimerList</h1>
-          <div className="p-4 text-center bg-blue-500 md:p-8 md:text-left lg:bg-green-500">
-    This div adapts based on screen size.
-</div>
-        </>
+<div id="Timers">
+
+
+        
+  <EditableTimer
+  title='Learn React'
+  project='Web Domination'
+  elapsed='8986300'
+  runningSince={null}
+  editFormOpen={false}
+  />
+
+   <EditableTimer
+   title='Learn React'
+  project='Web Domination'
+  elapsed='8986300'
+  runningSince={null}
+  editFormOpen={true}
+   
+   />
+   </div>
+        
     );
     }
 }

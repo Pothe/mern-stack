@@ -18,7 +18,7 @@ class TimersDashboard extends React.Component {
                 title:"Bake squash",
                 project: "kitchen Chores",
                 id: uuid(),
-                elapse:" 5456099",
+                elapse:"5456099",
                 runningSince: Date.now(),
              
             },
@@ -26,7 +26,7 @@ class TimersDashboard extends React.Component {
                 title:"Bake squash",
                 project: "kitchen Chores",
                 id: uuid(),
-                elapse:" 5456099",
+                elapse:"5456099",
                 runningSince: Date.now(),
              
             }

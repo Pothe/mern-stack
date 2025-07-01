@@ -4,7 +4,15 @@ class TimerForm extends React.Component{
     title: this.props.title || '',
     project : this.props.project || '',
   }
+  handleTitleChange =(e)=>(
+    this.setState({title: e.target.value})   
+  )
+   handleProjectChange =(e)=>(
+    this.setState({project: e.target.value})
+  )
     render(){
+       console.log(this.state.title)
+        console.log(this.state.project)
         const submitText = this.props.title ? 'Update' : 'Create';
         return(
             <>
@@ -13,11 +21,11 @@ class TimerForm extends React.Component{
         <form>
           <div className="mb-3">
             <label htmlFor="titleInput" className="form-label">Title</label>
-            <input type="text" className="form-control" id="titleInput" defaultValue={this.props.title ? this.props.title : this.state.title} />
+            <input type="text" className="form-control" id="titleInput" defaultValue={this.props.title ? this.props.title : this.state.title} onChange={this.handleTitleChange} />
           </div>
           <div className="mb-3">
             <label htmlFor="projectInput" className="form-label">Project</label>
-            <input type="text" className="form-control" id="projectInput" defaultValue={this.props.title ? this.props.project : this.state.project} />
+            <input type="text" className="form-control" id="projectInput" defaultValue={this.props.title ? this.props.project : this.state.project} onChange={this.handleProjectChange} />
           </div>
           <div className="d-grid gap-2 d-md-flex justify-content-md-center mt-4"> {/* Added mt-4 for some top margin */}
             <button className="btn btn-primary me-md-2" type="button">

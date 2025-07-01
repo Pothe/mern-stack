@@ -4,7 +4,7 @@ import Timer from "./Timer";
 
 class EditableTimer extends React.Component{
     state={
-        editFormOpen: true,
+        editFormOpen: false,
     }
     render(){
         if(this.state.editFormOpen){

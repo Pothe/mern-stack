@@ -10,9 +10,12 @@ class ToggleableTimerForm extends React.Component {
     }
     state = { isOpen:false } 
 
-    handleFormOpen =(value)=>{
+    handleFormOpen =()=>{
        this.setState({ isOpen: true });
   
+    }
+    HandleFormclose =()=>{
+        this.setState({isOpen: false})
     }
     
     render() { 
@@ -21,6 +24,8 @@ class ToggleableTimerForm extends React.Component {
             return(
                <>
                 <TimerForm  
+                 onFormClose={this.HandleFormclose}
+               
                 />
                </>
             )

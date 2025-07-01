@@ -14,12 +14,14 @@ class ToggleableTimerForm extends React.Component {
        this.setState({ isOpen: true });
   
     }
+    
     render() { 
 
         if(this.state.isOpen){
             return(
                <>
-                <TimerForm />
+                <TimerForm  
+                />
                </>
             )
         }

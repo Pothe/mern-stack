@@ -3,6 +3,7 @@ class TimerForm extends React.Component{
   state={
     title: this.props.title || '',
     project : this.props.project || '',
+    
   }
   handleTitleChange =(e)=>(
     this.setState({title: e.target.value})   
@@ -11,8 +12,10 @@ class TimerForm extends React.Component{
     this.setState({project: e.target.value})
   )
     render(){
-       console.log(this.state.title)
-        console.log(this.state.project)
+      if(this.props.id){
+        
+      }
+     
         const submitText = this.props.title ? 'Update' : 'Create';
         return(
             <>

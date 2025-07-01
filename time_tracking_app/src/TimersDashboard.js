@@ -41,9 +41,7 @@ class TimersDashboard extends React.Component {
         <div className="cards">
             <EditableTimerList timers={this.state.timers}/>
     
-            <ToggleableTimerForm 
-     isOpent={true}
-    />
+            <ToggleableTimerForm isclose={false} />
     </div>
        </div>
        );

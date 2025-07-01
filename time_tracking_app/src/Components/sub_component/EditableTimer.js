@@ -16,6 +16,7 @@ class EditableTimer extends React.Component{
                 project={this.props.project}
 
                 />
+                
              
                 </>
             )

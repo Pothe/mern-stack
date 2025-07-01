@@ -46,6 +46,5 @@ class TimersDashboard extends React.Component {
        </div>
        );
     }
-}
- 
+} 
 export default TimersDashboard;

@@ -10,7 +10,7 @@ const timers = this.props.timers.map((time)=>(
     title={time.title}
     id={time.id}
     project={time.project}
-    elapsed={time.elapsed}
+    elapsed={time.elapse}
     runningSince={time.runningSince}
   />
   

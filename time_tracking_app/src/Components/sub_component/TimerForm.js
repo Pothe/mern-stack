@@ -40,7 +40,7 @@ class TimerForm extends React.Component{
             <button className="btn btn-primary me-md-2" type="button">
               {submitText}
             </button>
-            <button className="btn btn-danger" type="button" onClick={this.props.onFormClose}>
+            <button className="btn btn-danger" type="button" onClick={this.props.title? this.props.onclose:this.props.onFormClose}>
               Cancel
             </button>
           </div>

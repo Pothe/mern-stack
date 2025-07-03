@@ -1,6 +1,7 @@
 import React from "react";
 class Timer extends React.Component{
     render(){
+      
         return(
            <div className="card text-center mx-auto" style={{ maxWidth: '400px' }}> {/* Added mx-auto and maxWidth for centering and width similar to 'ui centered card' */}
       <div className="card-body">

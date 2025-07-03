@@ -16,7 +16,7 @@ class Timer extends React.Component{
                      <div className="mb-3">
             <h3 htmlFor="projectInput" className="form-label">{this.props.elapse}</h3>
                      </div>
-          <div className="d-flex justify-content-end gap-1" ><i className="bi bi-trash3"></i><i className="bi bi-pencil-square"></i></div>
+          <div className="d-flex justify-content-end gap-1" ><i className="bi bi-trash3"></i> <span onClick={this.props.onEditclick}><i className="bi bi-pencil-square"></i></span></div>
           <div className="d-grid gap-2 d-md-flex justify-content-md-center mt-4"> {/* Added mt-4 for some top margin */}
                      
             <button className="btn btn-primary w-100 text-uppercase" type="button">
